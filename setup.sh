@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+SEt -euo pipefail
 
 test -d ~/.asdf || git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 test -f ~/.asdf/asdf.sh && source ~/.asdf/asdf.sh
@@ -16,15 +16,15 @@ if [ -f /etc/arch-release ]; then
     # discord # All-in-one voice and text chat for gamers.
     dive-bin # A tool for exploring each layer in a Docker image.
     docker # A platform that allows developers to package applications into containers, standardizing software delivery.
-    drawio-desktop-bin # A diagramming software to create flowcharts and other diagrams, this is the standalone desktop version.
+    # drawio-desktop-bin # A diagramming software to create flowcharts and other diagrams, this is the standalone desktop version.
     exa # A modern replacement for 'ls', provides a more aesthetically pleasing and feature-rich directory listing.
     fd # A fast and user-friendly alternative to the traditional 'find' command.
-    freeplane # A free and open-source software application that supports thinking, sharing information and getting things done at work.
+    # freeplane # A free and open-source software application that supports thinking, sharing information and getting things done at work.
     git # Distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
     haveged # A simple entropy daemon using the HAVEGE algorithm, designed to keep a sufficient level of entropy in the system.
     jq # A lightweight and flexible command-line JSON processor.
     # kubecm-git # A utility to manage Kubernetes context and namespaces in an easier way.
-    logseq-desktop # A local-first, non-linear, outliner notebook for organizing and sharing personal knowledge.
+    # logseq-desktop # A local-first, non-linear, outliner notebook for organizing and sharing personal knowledge.
     luarocks # A package manager for Lua modules.
     mold # A modern linker designed to be fast.
     mosh # Mobile Shell that supports roaming and improved interactivity, a replacement for SSH.
@@ -53,6 +53,7 @@ if [ -f /etc/arch-release ]; then
     xbindkeys # A program that allows you to launch shell commands with your keyboard or mouse under the X Window System.
     xvkbd # A virtual (graphical) keyboard program for X Window System which provides facility to enter characters onto other clients software by clicking a keyboard displayed on the screen.
     wezterm # A GPU-accelerated cross-platform terminal emulator and multiplexer, most notable for its ligature and emoji support.
+    signal-desktop
   )
 
   declare -a INSTALL_PACKAGES
@@ -187,8 +188,12 @@ fi
 mkdir -p ~/.tmux/plugins
 test -d ~/.tmux/plugins/tpm || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# Backup existing configs
+mv ~/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml.bak
+mv ~/.config/starship.toml ~/.config/starship.toml.bak
+
 stow -t "$HOME" alacritty
-stow -t "$HOME" bash
+# stow -t "$HOME" bash
 stow -t "$HOME" curl/
 stow -t "$HOME" git
 # stow -t "$HOME" hyprland/
@@ -196,8 +201,8 @@ stow -t "$HOME" neovim
 # stow -t "$HOME" scripts
 stow -t "$HOME" starship
 # stow -t "$HOME" systemd/
-stow -t "$HOME" tig/
+# stow -t "$HOME" tig/
 stow -t "$HOME" tmux
 stow -t "$HOME" wezterm/
-stow -t "$HOME" wireplumber/
+# stow -t "$HOME" wireplumber/
 stow -t "$HOME" zsh/
