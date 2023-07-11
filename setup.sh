@@ -175,6 +175,7 @@ if [ -f /etc/arch-release ]; then
   NPM_PACKAGES_TO_INSTALL=(
     neovim
     opencommit
+    alacritty-themes
   )
 
   for PACKAGE in "${NPM_PACKAGES_TO_INSTALL[@]}"; do

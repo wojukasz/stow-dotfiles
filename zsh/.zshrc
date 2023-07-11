@@ -17,3 +17,22 @@ if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Start SSH agent in the background (suppress output)
+eval $(ssh-agent -s) >/dev/null
+
+# Add SSH key to the agent (suppress output)
+ssh-add ~/.ssh/gitkey >/dev/null 2>&1
+
+# Function to start tmux session
+function start_tmux() {
+    if command -v tmux &> /dev/null; then
+        # Check conditions to start a new tmux session
+        if [[ $HOST == "zen" && -z "$TMUX" ]]; then
+            (tmux -2 attach || exec tmux)
+        fi
+    fi
+}
+
+# Call the function to start tmux
+start_tmux
