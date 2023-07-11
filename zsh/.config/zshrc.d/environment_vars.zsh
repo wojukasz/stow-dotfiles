@@ -6,7 +6,7 @@ if uname -a | grep 'Linux' &> /dev/null; then
 fi
 
 # Set AWS Region
-export AWS_DEFAULT_REGION='eu-west-2'
+# export AWS_DEFAULT_REGION='eu-west-2'
 
 # Set aws-vault options
 # if [[ -x /usr/bin/kwalletd5 ]]; then

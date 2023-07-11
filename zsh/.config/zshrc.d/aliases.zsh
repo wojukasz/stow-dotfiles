@@ -58,8 +58,8 @@ if uname -a | grep 'Darwin' &> /dev/null; then
   fi
 else
   if command -v exa &>/dev/null; then
-    alias ll='exa -l --grid --git';
-    alias ls='exa';
+    alias ll='exa -l --grid --git -a';
+    alias ls='exa -a';
     alias lt='exa --tree --git --long';
   else
     alias ll='ls --color=auto -l';

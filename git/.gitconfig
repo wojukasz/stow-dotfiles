@@ -2,7 +2,7 @@
 [user]
     email = lukasz.m.wojnicki@gmail.com
     name = Lukas Wojnicki
-    signingkey = ...
+    signingkey = 1C0A2FC84AF94F333AA29F958FD8A775D2F4EB3F
 
 [commit]
     gpgsign = true
