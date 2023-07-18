@@ -1,3 +1,5 @@
+-- A feature-rich Go development plugin, leveraging gopls, treesitter AST, Dap, and various Go tools to enhance the development experience.
+-- https://github.com/ray-x/go.nvim
 local M = {
 	"ray-x/go.nvim",
 	dependencies = { "ray-x/guihua.lua" },

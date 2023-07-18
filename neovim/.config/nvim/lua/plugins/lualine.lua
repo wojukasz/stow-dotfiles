@@ -1,3 +1,5 @@
+-- A blazing fast and easy to configure neovim statusline plugin written in pure lua
+-- https://github.com/nvim-lualine/lualine.nvim
 local M = {
 	"nvim-lualine/lualine.nvim",
 }

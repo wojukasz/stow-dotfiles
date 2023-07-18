@@ -1,3 +1,5 @@
+-- TrailBlazer enables you to seemlessly move through important project marks as quickly and efficiently as possible to make your workflow blazingly fast ™
+-- https://github.com/LeonHeidelbach/trailblazer.nvim
 return {
 	"LeonHeidelbach/trailblazer.nvim",
 	config = function()
@@ -20,9 +22,9 @@ return {
 				-- buffer_local_chron, buffer_local_line_sorted
 				current_trail_mark_mode = "global_chron",
 				verbose_trail_mark_select = true, -- print current mode notification on mode change
-				newest_mark_symbol = "⬤", -- disable this mark symbol by setting its value to ""
-				cursor_mark_symbol = "⬤", -- disable this mark symbol by setting its value to ""
-				next_mark_symbol = "⬤", -- disable this mark symbol by setting its value to ""
+				newest_mark_symbol = "⬤",   -- disable this mark symbol by setting its value to ""
+				cursor_mark_symbol = "⬤",   -- disable this mark symbol by setting its value to ""
+				next_mark_symbol = "⬤",     -- disable this mark symbol by setting its value to ""
 				previous_mark_symbol = "⬤", -- disable this mark symbol by setting its value to ""
 				multiple_mark_symbol_counters_enabled = true,
 				number_line_color_enabled = true,

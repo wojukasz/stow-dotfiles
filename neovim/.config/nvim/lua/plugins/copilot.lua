@@ -1,3 +1,6 @@
+-- Copilot Github plugin
+-- https://github.com/zbirenbaum/copilot.lua
+-- DO :Copilot auth
 return {
 	"zbirenbaum/copilot.lua",
 	event = { "VimEnter" },

@@ -1,3 +1,5 @@
+-- A neovim plugin that helps managing crates.io dependencies
+-- https://github.com/Saecki/crates.nvim
 local M = {
   "saecki/crates.nvim",
   event = { "BufRead Cargo.toml" },

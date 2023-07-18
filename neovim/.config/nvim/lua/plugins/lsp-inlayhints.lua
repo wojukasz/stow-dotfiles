@@ -1,3 +1,5 @@
+--  Partial implementation of LSP inlay hint.
+-- https://github.com/lvimuser/lsp-inlayhints.nvim
 return {
   "lvimuser/lsp-inlayhints.nvim",
   event = "LspAttach",

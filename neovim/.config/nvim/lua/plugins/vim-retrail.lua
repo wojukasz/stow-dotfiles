@@ -1,5 +1,7 @@
+-- Whitespace management for Neovim
+-- https://github.com/kaplanz/nvim-retrail
 local M = {
-  "zakharykaplan/nvim-retrail",
+  "kaplanz/nvim-retrail",
 }
 
 function M.config()

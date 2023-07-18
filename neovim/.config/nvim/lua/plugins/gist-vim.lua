@@ -1,3 +1,5 @@
+-- This is a vimscript for creating gists
+-- https://github.com/mattn/vim-gist
 local M = {
   "mattn/gist-vim",
   dependencies = { "mattn/webapi-vim" },

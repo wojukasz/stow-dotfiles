@@ -1,3 +1,5 @@
+-- Library of 30+ independent Lua modules improving overall Neovim (version 0.7 and higher) experience with minimal effort. They all share same configuration approaches and general design principles.
+-- https://github.com/echasnovski/mini.nvim
 local M = {
   "echasnovski/mini.nvim",
 }
@@ -8,7 +10,7 @@ function M.config()
     return
   end
 
-  surround.setup({}) -- Surround mappings like vim-sandwich and vim-surround
+  surround.setup({})                   -- Surround mappings like vim-sandwich and vim-surround
   require("mini.trailspace").setup({}) -- Highlight and remove trailing spaces
 
   require("mini.jump2d").setup({
@@ -17,11 +19,11 @@ function M.config()
 
     -- Which lines are used for computing spots
     allowed_lines = {
-      blank = true, -- Blank line (not sent to spotter even if `true`)
+      blank = true,         -- Blank line (not sent to spotter even if `true`)
       cursor_before = true, -- Lines before cursor line
-      cursor_at = true, -- Cursor line
-      cursor_after = true, -- Lines after cursor line
-      fold = true, -- Start of fold (not sent to spotter even if `true`)
+      cursor_at = true,     -- Cursor line
+      cursor_after = true,  -- Lines after cursor line
+      fold = true,          -- Start of fold (not sent to spotter even if `true`)
     },
 
     -- Module mappings. Use `''` (empty string) to disable one.

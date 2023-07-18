@@ -1,3 +1,5 @@
+-- allows you to effortlessly utilize the OpenAI ChatGPT AP
+-- https://github.com/jackMort/ChatGPT.nvim
 return {
 	"jackMort/ChatGPT.nvim",
 	event = "VeryLazy",

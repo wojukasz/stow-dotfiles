@@ -1,3 +1,5 @@
+-- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
+-- https://github.com/jose-elias-alvarez/null-ls.nvim
 local M = {
   "jose-elias-alvarez/null-ls.nvim",
 }

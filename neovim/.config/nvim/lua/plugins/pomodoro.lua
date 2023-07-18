@@ -1,3 +1,5 @@
+-- A Pomodoro timer for Neovim written in Lua
+-- https://github.com/wthollingsworth/pomodoro.nvim
 return {
 	"wthollingsworth/pomodoro.nvim",
 	dependencies = { "MunifTanjim/nui.nvim" },

@@ -2,6 +2,8 @@
 return {
 	-- Language servers + LSP tools {{{
 	{
+		-- Debug Adapter Protocol client implementation for Neovim
+		-- https://github.com/mfussenegger/nvim-dap
 		"mfussenegger/nvim-dap",
 		lazy = true,
 		config = function()

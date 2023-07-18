@@ -1,3 +1,5 @@
+-- Markdown Preview for (Neo)vim
+-- https://github.com/iamcco/markdown-preview.nvim
 local M = {
   "iamcco/markdown-preview.nvim",
   build = function()

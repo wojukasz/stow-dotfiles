@@ -1,3 +1,5 @@
+-- basic vim/terraform integration
+-- https://github.com/hashivim/vim-terraform
 local M = {
   "hashivim/vim-terraform",
   lazy = true,

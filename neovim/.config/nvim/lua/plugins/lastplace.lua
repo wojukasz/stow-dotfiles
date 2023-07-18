@@ -1,3 +1,5 @@
+-- Intelligently reopen files at your last edit pos
+-- https://github.com/ethanholz/nvim-lastplace
 local M = {
   "ethanholz/nvim-lastplace",
 }

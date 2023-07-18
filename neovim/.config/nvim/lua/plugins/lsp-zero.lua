@@ -1,3 +1,5 @@
+-- A starting point to setup some lsp related features in neovim.
+-- https://github.com/VonHeikemen/lsp-zero.nvim
 return {
   "VonHeikemen/lsp-zero.nvim",
   branch = "v2.x",

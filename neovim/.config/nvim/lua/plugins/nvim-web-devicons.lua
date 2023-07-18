@@ -1,3 +1,5 @@
+-- A lua fork of vim-devicons. This plugin provides the same icons as well as colors for each icon.
+--
 local M = {
   "kyazdani42/nvim-web-devicons",
 }

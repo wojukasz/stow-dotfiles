@@ -1,3 +1,5 @@
+-- verforest is a green based color scheme;
+-- https://github.com/sainnhe/everforest
 local M = {
   "sainnhe/everforest",
   lazy = true,

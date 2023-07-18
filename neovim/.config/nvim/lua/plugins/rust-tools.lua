@@ -1,3 +1,5 @@
+-- A plugin to improve your rust experience in neovim.
+-- https://github.com/simrat39/rust-tools.nvim
 local M = {
   "MunifTanjim/rust-tools.nvim",
   ft = "rust",

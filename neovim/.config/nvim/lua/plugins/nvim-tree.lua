@@ -1,3 +1,7 @@
+-- A file explorer tree for neovim written in lua
+-- https://github.com/nvim-tree/nvim-tree.lua
+-- Open the tree: :NvimTreeOpen
+-- Show the mappings: g?
 local M = {
 	"nvim-tree/nvim-tree.lua",
 }
@@ -9,7 +13,7 @@ function M.config()
 			group_empty = true,
 		},
 		filters = {
-			dotfiles = true,
+			dotfiles = false, -- show dotfiles
 		},
 	})
 end

@@ -1,3 +1,5 @@
+-- Tabline lua plugin for neovi
+-- https://github.com/alvarosevilla95/luatab.nvim
 local M = {
   "alvarosevilla95/luatab.nvim",
   lazy = true,

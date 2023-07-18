@@ -1,3 +1,5 @@
+-- Extensions for the built-in LSP support in Neovim for eclipse.jdt.ls
+-- https://github.com/mfussenegger/nvim-jdtls
 local M = {
 	"mfussenegger/nvim-jdtls",
 	ft = { "java" },
@@ -28,7 +30,7 @@ function M.config()
 			"java.base/java.lang=ALL-UNNAMED",
 			"-jar",
 			home_dir
-				.. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar",
+			.. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar",
 			"-configuration",
 			home_dir .. "/.local/share/nvim/mason/packages/jdtls/config_linux",
 			"-data",

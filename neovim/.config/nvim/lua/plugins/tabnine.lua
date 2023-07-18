@@ -1,3 +1,7 @@
+-- TabNine plugin for hrsh7th/nvim-cmp
+-- https://github.com/tzachar/cmp-tabnine
+-- :CmpTabnineHub: Open Tabnine Hub
+-- :CmpTabnineHubUrl: Show the link to Tanine Hub
 local M = {
   "tzachar/cmp-tabnine",
   build = "./install.sh",

@@ -1,5 +1,6 @@
 local M = {
-  "alanjjenkins/vim-terraform-completion",
+  -- "alanjjenkins/vim-terraform-completion",
+  "alisonjenkins/vim-terraform-completion",
   lazy = true,
   ft = "terraform",
 }

@@ -1,3 +1,5 @@
+-- Floating statuslines for Neovim
+-- https://github.com/b0o/incline.nvim
 local M = {
   "b0o/incline.nvim",
   lazy = true,

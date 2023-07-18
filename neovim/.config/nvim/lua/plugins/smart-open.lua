@@ -1,3 +1,6 @@
+-- Neovim plugin for fast file-finding
+-- https://github.com/danielfalk/smart-open.nvim
+-- sudo pacman -S sqlite -requirement
 return {
 	"danielfalk/smart-open.nvim",
 	branch = "0.1.x",

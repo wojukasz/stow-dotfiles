@@ -1,3 +1,5 @@
+-- Things you can do with fzf and Vim.
+-- https://github.com/junegunn/fzf
 local M = {
   "junegunn/fzf",
   lazy = true,
