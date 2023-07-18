@@ -54,6 +54,8 @@ if [ -f /etc/arch-release ]; then
     xvkbd # A virtual (graphical) keyboard program for X Window System which provides facility to enter characters onto other clients software by clicking a keyboard displayed on the screen.
     wezterm # A GPU-accelerated cross-platform terminal emulator and multiplexer, most notable for its ligature and emoji support.
     signal-desktop
+    keybase-gui
+    ruby
   )
 
   declare -a INSTALL_PACKAGES
@@ -154,19 +156,19 @@ if [ -f /etc/arch-release ]; then
   done
 
   # gem packages
-  # declare -a GEM_PACKAGES_INSTALLED
-  # declare -a GEM_PACKAGES_TO_INSTALL
-  # GEM_PACKAGES_INSTALLED=($(gem list))
+   declare -a GEM_PACKAGES_INSTALLED
+   declare -a GEM_PACKAGES_TO_INSTALL
+   GEM_PACKAGES_INSTALLED=($(gem list))
 
-  # GEM_PACKAGES_TO_INSTALL=(
-  #   neovim
-  # )
+   GEM_PACKAGES_TO_INSTALL=(
+     neovim
+   )
 
-  # for PACKAGE in "${GEM_PACKAGES_TO_INSTALL[@]}"; do
-  #   if ! echo "${GEM_PACKAGES_INSTALLED[@]}" | grep -q "$PACKAGE" &>/dev/null; then
-  #     gem install "$PACKAGE"
-  #   fi
-  # done
+   for PACKAGE in "${GEM_PACKAGES_TO_INSTALL[@]}"; do
+     if ! echo "${GEM_PACKAGES_INSTALLED[@]}" | grep -q "$PACKAGE" &>/dev/null; then
+       gem install "$PACKAGE"
+     fi
+   done
 
   # npm packages
   declare -a NPM_PACKAGES_INSTALLED
