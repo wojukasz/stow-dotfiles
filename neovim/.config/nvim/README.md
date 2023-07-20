@@ -5,3 +5,6 @@
 - cargo needs to be installed `rust up install stable`
 - do `:Copilot auth` to enable copilot workings
 - `sudo pacman -S sqlite` - dependency for https://github.com/danielfalk/smart-open.nvim
+
+#### Colorschemes
+https://vimcolorschemes.com/top

@@ -32,8 +32,12 @@ local M = {
     { "tzachar/cmp-tabnine",      build = "./install.sh" },
     { "romgrk/fzy-lua-native",    build = "make" },
     { "tzachar/cmp-fuzzy-buffer", dependencies = { "hrsh7th/nvim-cmp", "tzachar/fuzzy.nvim" } },
-    { "jcdickinson/codeium.nvim", config = true },
-    { "jcdickinson/http.nvim",    build = "cargo build --workspace --release" },
+    {
+      "jcdickinson/codeium.nvim",
+      config = true,
+      commit = "b1ff0d6c993e3d87a4362d2ccd6c660f7444599f"
+    },
+    { "jcdickinson/http.nvim", build = "cargo build --workspace --release" },
   },
 }
 

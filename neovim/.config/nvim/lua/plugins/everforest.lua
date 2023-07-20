@@ -1,8 +1,8 @@
--- verforest is a green based color scheme;
+-- everforest is a green based color scheme;
 -- https://github.com/sainnhe/everforest
 local M = {
   "sainnhe/everforest",
-  lazy = true,
+  lazy = false,
 }
 
 function M.config()
@@ -11,5 +11,7 @@ function M.config()
   vim.g.everforest_diagnostic_text_highlight = true
   vim.g.everforest_transparent_background = true
 end
+
+vim.cmd([[colorscheme everforest]])
 
 return M
