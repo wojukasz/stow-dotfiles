@@ -1,3 +1,8 @@
+# My mouse has a pair of page back and forward side buttons and horizontal scrolling functionality that are not functional by default in my Linux guest,
+# actually those buttons are only recognized if the mouse itself is detected as a usb device by the guest, which you can proove by typing:
+# cat /proc/bus/input/devices
+# and using: xev to check each mouse key number.
+
 # https://x4dev.wordpress.com/2011/03/26/howto-logitech-mx-revolution-on-ubuntu/
 # Button Assignments for the MX Revolution
 # Name	Xbindkeys Number
