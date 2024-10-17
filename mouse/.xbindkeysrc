@@ -3,31 +3,43 @@
 # cat /proc/bus/input/devices
 # and using: xev to check each mouse key number.
 
-# https://x4dev.wordpress.com/2011/03/26/howto-logitech-mx-revolution-on-ubuntu/
-# Button Assignments for the MX Revolution
-# Name	Xbindkeys Number
-# Left click	b:1
-# Right click	b:3
-# Main Wheel press down	b:2
-# Main Wheel press left	b:7
-# Main Wheel press right b:6
-# Second Wheel press down	b:17
-# Second Wheel press forward	b:13
-# Second Wheel press backward	b:15
-# Button Up	b:9
-# Button Down	b:8
 
+# Working Button Assignments for the MX Revolution
+# Name  Xbindkeys Number
+# Left click    b:1
+# Right click   b:3
+# Main Wheel press down b:2
+# Main Wheel press left b:7
+# Main Wheel press right b:6
+# Second Wheel press down       b:17
+# Second Wheel press forward    b:13
+# Second Wheel press backward   b:15
+# Button Up     b:9
+# Button Down   b:8
+
+# Second Wheel press backward (b:15) - Ctrl + Page Up (previous page)
 "/usr/bin/xvkbd -text "\[Control_L]\[Page_Up]""
   m:0x0 + b:15
+
+# Second Wheel press forward (b:13) - Ctrl + Page Down (next page)
 "/usr/bin/xvkbd -text "\[Control_L]\[Page_Down]""
   m:0x0 + b:13
+
+# Second Wheel press down (b:17) - Ctrl + W (close tab/window)
 "/usr/bin/xvkbd -text "\[Control_L]\[w]""
   m:0x0 + b:17
-"/usr/bin/xvkbd -text "\[Control_L]\[ShiftL]\[p]""
+
+# Main Wheel press left (b:6) - Ctrl + C (copy)
+"/usr/bin/xvkbd -text "\[Control_L]\[c]""
   m:0x0 + b:6
 
-# map search button as third
-"/usr/bin/xvkbd -text "\[Alt_L]\[F4]""
-c:0xE1
+# Main Wheel press right (b:7) - Ctrl + V (paste)
+"/usr/bin/xvkbd -text "\[Control_L]\[v]""
+  m:0x0 + b:7
 
-# c:0xE1
+# disable default Search for KRunner in KDE settings
+# sudo evtest to confirm which search key is mapped to
+# Map XF86Search (keycode 225 or 217) to simulate the middle mouse button click
+"/usr/bin/xdotool mousedown 2 mouseup 2"
+  XF86Search
+
