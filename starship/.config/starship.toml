@@ -67,15 +67,18 @@ disabled = true  # disabled by default
 
 [time]
 disabled = false
-### color is set to orange, because of the configured time_range--to get your attention for e. g. R&R time ;)
 style = 'bg:#2C3E50'
 use_12hr = false
 time_format = "%H:%M"
-utc_time_offset = "local"
-time_range = "20:00:00-06:00:00"
+format = "[ $time ]($style)"
+#disabled = false
+### color is set to orange, because of the configured time_range--to get your attention for e. g. R&R time ;)
+#style = 'bg:#2C3E50'
+#use_12hr = false
+#time_format = "%H:%M"
+#utc_time_offset = "local"
+#time_range = "20:00:00-06:00:00"
 # format = '[ $symbol ]($style)'
-
-format = "[ $time ]($style)"
 
 
 [directory]
